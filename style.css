@@ -1,0 +1,19 @@
+body {
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #line {
+    color: #000000;
+    font-size: 40px;
+  }
+  
+  .container {
+    flex: 1 0 auto;
+  }
+  
+  .footer {
+    color: #000000;
+  }

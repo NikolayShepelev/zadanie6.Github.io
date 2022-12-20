@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Таз-Ваз </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid page" style="background-color: #b87333;">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-5 offset-5 col-md-4 offset-md-1 order-2">
+                        <div class="h-100 py-3">
+                            <div id="line">
+                                <p class="text-center">Автосалон дорогих и премиальных машин "Таз-Ваз"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 col-md-3 order-1">
+                        <div class="h-100 py-3">
+                            <div id="logo">
+                                <img src="https://автолого.рф/wp-content/uploads/lada-1993.png"
+                                    Width="120" Height="120" alt="name" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class=" row mt-3 order-2 order-md-3" style="background-color: #b87333;">
+            <div class="col-12 col-md-6">
+                Введите кол-во товара:
+                <p><input type="text" id="num" placeholder="Введите..." onkeypress="cifra()"></p>
+                Выберете тип товара:
+                <form>
+                    <select name="prodType">
+                        <option value="1">ВАЗ 2110</option>
+                        <option value="2">ВАЗ 2107</option>
+                        <option value="3">ВАЗ 2114</option>
+                    </select>
+                    <div id="radios">
+                        <label><input type="radio" checked="checked" name="prodOptions" value="option1">
+                            Комплектация: "Зимний дрифт"</label>
+                        <label><input type="radio" name="prodOptions" value="option2"> Комплектация: "Всесезонный дрифт" </label>
+                        <label><input type="radio" name="prodOptions" value="option3"> Комплектация: "Ракета Edition" </label>
+                    </div>
+                    <div id="checkboxes">
+                        <label><input type="checkbox" name="prop1"> ЧИП "Паулюс"</label>
+                        <label><input type="checkbox" name="prop2"> Выхлоп "ПАУК"</label>
+                    </div>
+                </form>
+                <div id="prodPrice"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid page mt-3" style="background-color: #b87333;">
+        <footer class="footer" id="foot">
+            <h5> Шепелев Николай ПИ 27/2 </h5>
+        </footer>
+    </div>
+</body>
+
+</html>
